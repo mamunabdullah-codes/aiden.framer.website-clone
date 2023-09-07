@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS Animation Library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Title  -->
+    <title>Aiden - AI Automation Agency</title>
+
+    <!-- Favicon  -->
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon.webp"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind Style Sheet Link  -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css" />
+
+    <!-- Information about the page  -->
+
+    <!-- THIS IS THE CLONE OF THE PAGE AIDEN.FRAMER.WEBSITE. I HAVE USE TAILWIND CSS
+    FOR STYLING, AOS LIBRARY FOR ANIMATION, SWIPER JS FOR SLIDER AND ROW JS FOR
+    TOGGLE MENU. -->
+  </head>
+  <body>
+    <!-- Top Bar  -->
+    <div class="topbar">
+      <a href="#calendly"
+        ><p class="text-white">Accepting 4 new clients. Get started -&gt;</p></a
+      >
+    </div>
+    <header class="relative">
+      <!-- Navigation bar -->
+      <div class="container mx-auto">
+        <nav class="py-12 flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <div class="flex-shrink-0">
+              <h2 class="text-6xl font-semibold text-black font-instrument">
+                wize
+              </h2>
+            </div>
+          </div>
+          <div
+            class="hidden md:flex items-center space-x-12 font-medium font-inter"
+          >
+            <a href="#" class="text-black text-2xl hover:text-primary"
+              >Features</a
+            >
+            <a href="#" class="text-black text-2xl hover:text-primary"
+              >Services</a
+            >
+            <a href="#" class="text-black text-2xl hover:text-primary"
+              >Testimonials</a
+            >
+            <a href="#" class="text-black text-2xl hover:text-primary"
+              >Process</a
+            >
+            <a href="#" class="text-black text-2xl hover:text-primary">FAQ</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <button href="#calendly" class="btn-primary">
+              Schedule a Call
+            </button>
+          </div>
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-black">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 h-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div
+          id="mobileMenu"
+          class="md:hidden p-4 hidden text-center space-y-10"
+        >
+          <a href="#" class="block text-black text-2xl hover:text-primary"
+            >Features</a
+          >
+          <a href="#" class="block text-black text-2xl hover:text-primary"
+            >Services</a
+          >
+          <a href="#" class="block text-black text-2xl hover:text-primary"
+            >Testimonials</a
+          >
+          <a href="#" class="block text-black text-2xl hover:text-primary"
+            >Process</a
+          >
+          <a href="#" class="block text-black text-2xl hover:text-primary"
+            >FAQ</a
+          >
+          <button class="bg-primary w-11/12 text-white px-16 py-6 rounded-full">
+            Schedule a Call
+          </button>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <!-- Hero Section  -->
+    <section>
+      <div class="container mx-auto my-16">
+        <div
+          class="hero-content flex flex-col items-center gap-12 mx-auto max-w-[68rem]"
+        >
+          <h1
+            data-aos="fade-up"
+            class="font-semibold text-5xl md:text-8xl text-center"
+          >
+            Save time & work smarter with AI Automation
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            class="text-center max-w-[60rem]"
+          >
+            We help you automate your workflows, automate repetitive tasks, and
+            elevate your business.
+          </p>
+          <a
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            class="btn-primary transition-all duration-500"
+            href="#calendly"
+            >Book your free audit call</a
+          >
+
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            class="flex items-center space-x-4"
+          >
+            <div><img src="src/images/clock.svg" alt="clock" /></div>
+            <p>No-pressure 30 minute discovery call</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section  -->
+    <section
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      class="container mx-auto pb-24 flex flex-col justify-center items-center"
+    >
+      <h4 class="text-text text-2xl">
+        Watch this video to see how we do it 👇
+      </h4>
+      <div class="container mx-auto mt-10 flex justify-center items-center">
+        <iframe
+          width="100%"
+          height="640"
+          src="https://www.youtube.com/embed/smPos0mJvh8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Infinite Autoplay Carousel Section  -->
+
+    <section>
+      <div class="slider container">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="src/images/slide-1.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-2.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-3.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-4.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-5.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-6.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-7.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-1.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-2.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-3.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-4.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-5.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-6.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/images/slide-7.png" height="100" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why use AI Section  -->
+    <section>
+      <div class="wrapper container mx-auto my-36">
+        <div class="ai-use">
+          <div
+            class="flex flex-col lg:flex-row items-center text-center md:text-left gap-32 justify-between my-20"
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              class="basis-3/5 flex flex-col gap-y-6 items-center lg:items-start"
+            >
+              <h2 class="text-5xl">
+                You can’t beat AI... So why not <span>use</span> it?
+              </h2>
+              <p>
+                With the public launch of OpenAI's ChatGPT and the GPT-4 LLM,
+                people are starting to see the true power of AI. We help you
+                utilize that power into your business.
+              </p>
+            </div>
+            <div class="flex flex-col md:items-end gap-6">
+              <a class="btn btn-primary" href="#calendly"
+                >Join the AI revolution</a
+              >
+              <div class="flex items-center space-x-4">
+                <div>
+                  <img src="src/images/clock.svg" alt="clock" />
+                </div>
+                <p>No-pressure 30 minute discovery call</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div
+            class="my-20 flex flex-col md:flex-row gap-20 items-center justify-center"
+          >
+            <div class="ai-div">
+              <div><img src="src/images/tick.svg" alt="" /></div>
+              <h3>Stop wasting hundreds of work hours on repetitive tasks</h3>
+              <p>
+                Using powerful workflow automations we are able to help you
+                automate annoying and time-heavy tasks.
+              </p>
+            </div>
+            <div class="ai-div">
+              <div><img src="src/images/tick.svg" alt="" /></div>
+              <h3>Let AI handle 80% of your customer support</h3>
+              <p>
+                Using the power of AI chatbots trained on all of your company
+                data, you will be able to handle 80% of your support tickets
+                with AI.
+              </p>
+            </div>
+            <div class="ai-div">
+              <div><img src="src/images/tick.svg" alt="" /></div>
+              <h3>Offload new employee onboarding to AI</h3>
+              <p>
+                Chatbots for internal use can make your employee's life 10x
+                easier, and make them 10x more productive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Support Workflow and Chatbot Section  -->
+
+    <section class="chatbots container mx-auto">
+      <!-- Support Chatbots  -->
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+        class="wrapper-chatbots"
+      >
+        <div class="image basis-1/2">
+          <img src="src/images/customer-support-chatbots.svg" alt="" />
+        </div>
+        <div class="content-chatbot">
+          <h2>Customer support chatbots</h2>
+          <p>
+            We build custom chatbots trained on all of your company data -
+            product descriptions, specifications, PDFs, customer support chat
+            database, etc…
+          </p>
+          <p>
+            When the AI is trained on data like this, it can handle a big part
+            of your customer support.
+          </p>
+          <a class="btn-primary hidden lg:block" href="#calendly"
+            >Inquire about AI chatbot</a
+          >
+        </div>
+      </div>
+
+      <!-- Workflow Animation  -->
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        class="wrapper-chatbots"
+      >
+        <div class="image basis-1/2">
+          <img src="src/images/ai-autonomus.svg" alt="" />
+        </div>
+        <div class="content-chatbot">
+          <h2>Workflow automations</h2>
+          <p>
+            Manually doing repetitive tasks not only takes more time but also
+            leaves room for human error. By creating AI workflow automations for
+            your specific needs you'll be able to offload hours of work.
+          </p>
+          <p>
+            Imagine every time you close a client, they automatically received
+            an onboarding link, Slack invitation, their own Drive folder was
+            created and shared with them.
+          </p>
+          <a class="btn-primary hidden lg:block" href="#calendly"
+            >Inquire about workflow automations</a
+          >
+        </div>
+      </div>
+
+      <!-- Chatbot for Internal Use  -->
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        class="wrapper-chatbots"
+      >
+        <div class="image basis-1/2">
+          <img src="src/images/chatbots.svg" alt="" />
+        </div>
+        <div class="content-chatbot">
+          <h2>Chatbots for internal use</h2>
+          <p>
+            Chatbots are not only useful for customer support. Internal use
+            chatbots can be used for a variety of tasks - like helping onboard
+            new employees, answering common questions, scheduling calls, etc.
+          </p>
+
+          <a class="btn-primary hidden lg:block" href="#calendly"
+            >Explolre Internal Chatbots</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section  -->
+
+    <section class="container mx-auto mb-48">
+      <h2 class="text-center">Hear from our clients</h2>
+
+      <!-- Testimonial without Swiper -for lg device  -->
+      <div class="testimonial-wrapper">
+        <div
+          class="content flex flex-col basis-[30%] gap-10 py-12 bg-lightGray my-16"
+        >
+          <div><img src="src/images/star.svg" alt="" /></div>
+          <h3>Our workflow has never been smoother…</h3>
+          <p>
+            We started working with Wize 2 months ago, and they helped us
+            automate our client onboarding process… This choice has saved us
+            hundreds of work hours already, and it's only been 2 months!
+          </p>
+          <hr />
+          <div>
+            <h4>James Williams</h4>
+            <p>Founder, JW Slides</p>
+          </div>
+        </div>
+
+        <div
+          class="content flex flex-col basis-[30%] gap-10 py-12 bg-lightGray my-16"
+        >
+          <div><img src="src/images/star.svg" alt="" /></div>
+          <h3>Our workflow has never been smoother…</h3>
+          <p>
+            We started working with Wize 2 months ago, and they helped us
+            automate our client onboarding process… This choice has saved us
+            hundreds of work hours already, and it's only been 2 months!
+          </p>
+          <hr />
+          <div>
+            <h4>James Williams</h4>
+            <p>Founder, JW Slides</p>
+          </div>
+        </div>
+
+        <div
+          class="content flex flex-col basis-[30%] gap-10 py-12 bg-lightGray my-16"
+        >
+          <div><img src="src/images/star.svg" alt="" /></div>
+          <h3>Our workflow has never been smoother…</h3>
+          <p>
+            We started working with Wize 2 months ago, and they helped us
+            automate our client onboarding process… This choice has saved us
+            hundreds of work hours already, and it's only been 2 months!
+          </p>
+          <hr />
+          <div>
+            <h4>James Williams</h4>
+            <p>Founder, JW Slides</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial with swiper slides   -->
+      <section class="testimonial testimonial-swiper container mx-auto">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- slide 01 -->
+            <div class="swiper-slide flex flex-col justify-start items-start">
+              <div
+                class="content flex flex-col items-start justify-evenly text-left gap-10 py-12 bg-lightGray my-16"
+              >
+                <div><img src="src/images/star.svg" alt="" /></div>
+                <h3>Our workflow has never been smoother…</h3>
+                <p class="md:pb-20">
+                  We started working with Wize 2 months ago, and they helped us
+                  automate our client onboarding process… This choice has saved
+                  us hundreds of work hours already, and it's only been 2
+                  months!
+                </p>
+                <div class="w-full">
+                  <hr />
+                </div>
+                <div>
+                  <h4>James Williams</h4>
+                  <p>Founder, JW Slides</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 02 -->
+            <div class="swiper-slide flex flex-col justify-start items-start">
+              <div
+                class="content flex flex-col items-start justify-evenly text-left gap-10 py-12 bg-lightGray my-16"
+              >
+                <div><img src="src/images/star.svg" alt="" /></div>
+                <h3>AI took over 60% of the support tickets</h3>
+                <p class="md:pb-20">
+                  Our chatbot has took over more than 60% of our support
+                  tickets, and customers are not even noticing they are talking
+                  to AI!
+                </p>
+                <div class="w-full">
+                  <hr />
+                </div>
+                <div>
+                  <h4>James Williams</h4>
+                  <p>Founder, JW Slides</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 03 -->
+            <div class="swiper-slide flex flex-col justify-start items-start">
+              <div
+                class="content flex flex-col items-start justify-evenly text-left gap-10 py-12 bg-lightGray my-16"
+              >
+                <div><img src="src/images/star.svg" alt="" /></div>
+                <h3>Our sales team loves AI</h3>
+                <p class="md:pb-20">
+                  We approached Wize for an internal chatbot that's trained on
+                  all of our sales data, and the results are amazing! Sales reps
+                  are able to ask the bot any question in our sales training
+                  books and get an answer in seconds.
+                </p>
+                <div class="w-full">
+                  <hr />
+                </div>
+                <div>
+                  <h4>James Williams</h4>
+                  <p>Founder, JW Slides</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination  -->
+        <div class="swiper-pagination"></div>
+        <!-- For Unique Navigation Button  -->
+        <div class="swiper-button-prev-unique d-inline">
+          <button>
+            <i class="bi bi-chevron-left"></i>
+          </button>
+        </div>
+        <div class="swiper-button-next-unique">
+          <button>
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Our Progress Section  -->
+
+    <section class="container progress mx-auto max-w-[750px] mb-48">
+      <h2
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+        class="text-center"
+      >
+        Our Progress
+      </h2>
+
+      <div class="wrapper flex flex-col justify-center">
+        <!-- 01 -->
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="content flex flex-col gap-10 py-12 bg-lightGray my-6"
+        >
+          <h3><span>01</span></h3>
+          <h3>Book your free discovery call</h3>
+          <p>
+            On this call you'll share a little more about your company, the
+            processes you have in place, and we will suggest areas in which AI
+            can help you.
+          </p>
+          <div class="mt-9">
+            <a class="btn-primary" href="#calendly">Speak to us today</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div><img src="src/images/clock.svg" alt="clock" /></div>
+            <p>No-pressure 30 minute discovery call</p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="content flex flex-col gap-10 py-12 bg-lightGray my-6"
+        >
+          <h3><span>02</span></h3>
+          <h3>Planning & strategy session</h3>
+          <p>
+            If we're a fit, after the discovery call we will start planning the
+            course of action. We'll schedule a Strategy Session call where we
+            will share with you the next steps, and adjust the plan if needed.
+          </p>
+        </div>
+
+        <!-- 03 -->
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="content flex flex-col gap-10 py-12 bg-lightGray my-6"
+        >
+          <h3><span>03</span></h3>
+          <h3>Development</h3>
+          <p>
+            Once we've agreed on the strategy and plan of action, we get to work
+            and start developing your new AI solutions.
+          </p>
+        </div>
+
+        <!-- 04 -->
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="content flex flex-col gap-10 py-12 bg-lightGray my-6"
+        >
+          <h3><span>04</span></h3>
+          <h3>Deployment + optimization</h3>
+          <p>
+            Once we're ready with the development, we will deploy the product
+            and start looking for potential areas of improvement.
+          </p>
+          <div class="mt-9">
+            <a class="btn-primary" href="#calendly">Get started</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div><img src="src/images/clock.svg" alt="clock" /></div>
+            <p>No-pressure 30 minute discovery call</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently asked questions  -->
+    <section
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      class="faq"
+    >
+      <h2 class="text-center mb-10">Frequently asked questions</h2>
+
+      <!-- Accordion without using Javascript -->
+      <div class="max-w-[750px] mx-auto">
+        <ul class="accordion">
+          <li>
+            <input type="radio" name="accordion" id="first" />
+            <label for="first">Products</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                dignissimos facilis pariatur et laudantium eaque, unde soluta
+                consequatur possimus consectetur ipsam maxime velit voluptatum,
+                eum vitae minima est quidem harum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="second" />
+            <label for="second">Information</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                dignissimos facilis pariatur et laudantium eaque, unde soluta
+                consequatur possimus consectetur ipsam maxime velit voluptatum,
+                eum vitae minima est quidem harum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="third" />
+            <label for="third">Questions</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                dignissimos facilis pariatur et laudantium eaque, unde soluta
+                consequatur possimus consectetur ipsam maxime velit voluptatum,
+                eum vitae minima est quidem harum.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Calendly Section  -->
+    <section
+      id="calendly"
+      name="calendly"
+      class="audit-call container mx-auto my-32"
+    >
+      <div class="flex flex-col-reverse md:flex-row justify-center gap-16">
+        <div class="basis-1/2">
+          <!-- Calendly inline widget begin -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/mamunabdullah-code/30min?text_color=ff4f00"
+            style="min-width: 320px; height: 700px"
+          ></div>
+
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
+          <!-- Calendly inline widget end -->
+        </div>
+        <div class="audit-call-wrapper" id="call">
+          <div class="content-audit-call">
+            <h2 class="text-center md:mb-24 mb-8">Book your free audit call</h2>
+            <div class="flex flex-col md:flex-row items-center gap-5">
+              <div>
+                <img
+                  class="h-28 w-28 rounded-full object-cover border border-primary"
+                  src="src/images/james.jpg"
+                  alt="james"
+                />
+              </div>
+              <div>
+                <h3>Schedule your call with James</h3>
+                <div class="flex items-center space-x-4">
+                  <div><img src="src/images/clock.svg" alt="clock" /></div>
+                  <p>No-pressure 30 minute discovery call</p>
+                </div>
+              </div>
+            </div>
+            <p class="text-center md:text-left">
+              The goal of this call is to get to know you and your business, and
+              see if we can help you achieve your goals. Find a slot that works
+              for you on the Calendar and let's talk!
+            </p>
+          </div>
+          <div class="flex flex-col gap-12 my-10">
+            <h4 class="text-center md:text-left">This call is perfect for:</h4>
+            <div class="flex gap-4">
+              <div>
+                <img src="src/images/tick.svg" alt="" />
+              </div>
+              <p>Companies looking to improve their efficiency</p>
+            </div>
+
+            <div class="flex gap-4">
+              <div>
+                <img src="src/images/tick.svg" alt="" />
+              </div>
+              <p>
+                Founders and C-Level executives with specific ideas of how to
+                implement AI into their companies
+              </p>
+            </div>
+
+            <div class="flex gap-4">
+              <div>
+                <img src="src/images/tick.svg" alt="" />
+              </div>
+              <p>
+                Founders and C-Level executives looking to better understand AI
+                and how to implement it in their companies
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-lightGray">
+      <div
+        class="flex flex-col md:flex-row md:justify-center md:items-center gap-28 py-32"
+      >
+        <div class="flex flex-col items-center text-center md:basis-2/5 gap-10">
+          <h2 class="text-6xl md:text-7xl">
+            Save time & work smarter with <span>AI Automation</span>
+          </h2>
+          <p>
+            We help you automate your workflows, automate repetitive tasks, and
+            elevate your business.
+          </p>
+        </div>
+        <a class="btn-primary md:rounded-[48px] p-9 md:p-36" href="#calendly">
+          <div
+            class="flex justify-center items-center gap-6 text-4xl md:text-5xl font-bold"
+          >
+            Book Your Free Audit Call
+            <div><img src="src/images/up-right-arrow.png" alt="" /></div>
+          </div>
+        </a>
+      </div>
+      <hr />
+      <div
+        class="footer-wrapper container mx-auto py-16 flex flex-col md:flex-row justify-between items-center gap-10"
+      >
+        <h2 class="text-6xl font-semibold text-black font-instrument">wize</h2>
+        <p>Copyright © 2023 Wize Design. All rights reserved.</p>
+        <div class="social flex gap-8">
+          <img src="src/images/twitter.svg" alt="" />
+          <img src="src/images/youtube.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!-- Script  -->
+    <script>
+      // Toggle Menu
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          900: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          // dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-unique",
+          prevEl: ".swiper-button-prev-unique",
+        },
+      });
+    </script>
+    <!-- AOS Animation  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
